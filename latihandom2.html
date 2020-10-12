@@ -14,16 +14,21 @@
         tinggi: <input type="text" id="tinggi">
         <input type="button" id="tombol" value="Hitung" onclick="hitungLuas()">
     </form>
-    Luas = <span id="nilaiLuas"></span>
+    Luas = <span id="nilaiLuas"></span> cm<sup>2</sup>
     <script>
-        function hitungLuas() {
+        // function hitungLuas() {
+        const hitungLuas = () => {
             alas = document.getElementById("alas").value;
             tinggi = document.getElementById("tinggi").value;
-            luas = document.getElementById("nilaiLuas");
-
-            let hasil = 0.5 * parseFloat(alas) * parseFloat(tinggi);
-            luas.innerHTML = hasil + " cm<sup>2</sup>";
+            
+            const hasil = 0.5 * parseFloat(alas) * parseFloat(tinggi);        
+            return hasil;
         }
+        const hasilHitung = () => {
+            luas = document.getElementById("nilaiLuas");
+            luas.innerHTML = hitungLuas;
+        }
+        
     </script>
 
     <!-- Nilai x = <span id="nilaiX"></span>
