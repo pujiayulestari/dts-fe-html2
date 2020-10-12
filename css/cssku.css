@@ -2,3 +2,6 @@
     background-color: red;
     background-image: linear-gradient(to bottom right, red, yellow);
 }
+.jumbotron h5 {
+    color: #666666;
+}

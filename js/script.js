@@ -22,7 +22,9 @@ $('.page-scroll').on('click', function(e){
 //     // // console.log($("body").scrollTop());
     
 
-    $('html, body').animate(isPlainObjeck(elemenTarget).scrollTop(target).offset().top - 150);
+    $('html, body').animate({isPlainObjeck(elemenTarget)}
+    .scrollTop(target).
+    offset().top - 150);
 
     e.preventDefault();
 }, 1000, "linear");
