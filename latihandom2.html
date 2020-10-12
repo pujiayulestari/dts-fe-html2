@@ -10,23 +10,21 @@
 <body>
     <h3>Menghitung Luas Segitiga</h3>
     <form>
-        alas: <input type="text" id="alas">
-        tinggi: <input type="text" id="tinggi">
-        <input type="button" id="tombol" value="Hitung" onclick="hitungLuas()">
+        alas: <input type="text" id="alas"><br>
+        tinggi: <input type="text" id="tinggi"><br>
+        <input type="button" id="tombol" value="Hitung" onclick=hitungLuas()>
     </form>
-    Luas = <span id="nilaiLuas"></span> cm<sup>2</sup>
+    Luas = <span id="nilaiLuas"></span>
     <script>
-        // function hitungLuas() {
-        const hitungLuas = () => {
+        function hitungLuas() {
+        // const hitungLu
             alas = document.getElementById("alas").value;
             tinggi = document.getElementById("tinggi").value;
-            
-            const hasil = 0.5 * parseFloat(alas) * parseFloat(tinggi);        
-            return hasil;
-        }
-        const hasilHitung = () => {
             luas = document.getElementById("nilaiLuas");
-            luas.innerHTML = hitungLuas;
+            
+            var hasil = 0.5 * parseFloat(alas) * parseFloat(tinggi);
+            
+            return hasil;
         }
         
     </script>
