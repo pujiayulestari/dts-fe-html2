@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 onclick="gantiTulisan(this)">Latihan DOM</h1>
+    <p id="pesan"></p>
+    <p id="pesan2"></p>
+    <script>
+        // pemanggilan via document.getElementById
+        document.getElementById("pesan").innerHTML = "<h3>Selamat datang di dunia DOM HTML</h3>";
+        // assign document.getElementById ke var
+        var pesanParagraf2 = document.getElementById("pesan2");
+        pesanParagraf2.style.color = "blue"
+        pesanParagraf2.innerHTML = "Good jobs!!!";
+
+        // let judul = document.getElementById("judul");
+        function gantiTulisan(id) {
+            id.innerHTML = "saya diklik...";
+        }
+    </script>
+</body>
+
+</html>

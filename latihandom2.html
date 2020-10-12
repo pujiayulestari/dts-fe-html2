@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Menghitung Luas Segitiga</h3>
+    <form>
+        alas: <input type="text" id="alas">
+        tinggi: <input type="text" id="tinggi">
+        <input type="button" id="tombol" value="Hitung" onclick="hitungLuas()">
+    </form>
+    Luas = <span id="nilaiLuas"></span>
+    <script>
+        function hitungLuas() {
+            alas = document.getElementById("alas").value;
+            tinggi = document.getElementById("tinggi").value;
+            luas = document.getElementById("nilaiLuas");
+
+            let hasil = 0.5 * parseFloat(alas) * parseFloat(tinggi);
+            luas.innerHTML = hasil + " cm<sup>2</sup>";
+        }
+    </script>
+
+    <!-- Nilai x = <span id="nilaiX"></span>
+    <script>
+        var x = 5; //integer
+        x = 10,5; //float
+        x = "Andi"; //string
+        nilaiX = document.getElementById("nilaiX");
+        nilaiX.innerHTML = x;
+        alert("Nilai x= " + x);
+    </script> -->
+</body>
+
+</html>
